@@ -1,7 +1,7 @@
 *{
-font-family:sans-serif;
+   font-family: sans-serif; 
+   box-sizing: border-box;
 }
-
 body {
 margin:0;
     
@@ -79,9 +79,9 @@ header{
 .card{
     margin:7px;
     border-radius: 4px;
-    padding: 7px;
+    padding: 7px 7px 19px 7px;
     box-shadow: 0px 0px 10px 0.01px rgba(0,0,0,0.2);
-    min-height: 80px;
+    min-height: 60px;
     max-width: 600px;
     display: flex;
     flex-direction:column;
@@ -94,7 +94,7 @@ header{
     flex-direction:row;
     justify-content: space-between;
     padding: 0;
-    margin:0;
+    margin:0px;
     align-items: flex-start;
     width: 100%;
     
@@ -110,20 +110,54 @@ header{
     color:rgb(0,20,150);
     font-size: 20px;
     text-align:right;
-    margin:10px;
+    margin:0px;
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content: right;
     direction: rtl;
-    align-items: right;
-    gap:10px;
-    width: 100%;
+    align-items: flex-start;
+    gap:3px;
+    width: 94%;
     box-sizing: border-box;
+    height: auto;
+    margin-left: 34px;
+    
 }
 .p2{
-    background-image:url("p2.jpg");
-    width: 50px;
-    height: 30px;
-    background-size: cover;
-    background-position: center;
+    margin: 2px;
+    height: 25px;
+    width: auto;
+    margin-top: 7px;
+}
+#pm{
+    width: 270px;
+    position: fixed;
+    z-index: 6;
+    right: -270px;
+    background-color: rgba(86, 91, 140, 1);
+    height: 100dvh;
+    top:0px;
+    transition: 0.3s;
+    
+}
+#os{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0px;
+    right:0px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.3s;
+    
+}
+#cm{
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
