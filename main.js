@@ -10,5 +10,9 @@ function om() {
   } else {
     menu.style.right = "-270px";
     os.style.opacity = "0";
+    cm.style.zIndex = "-1";
   }
+}
+function ref() {
+  location.reload();
 }
