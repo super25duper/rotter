@@ -164,7 +164,7 @@ header{
 #ref{
     width: 32px;
     height: 32px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0);
     position: fixed;
     top:13.5px;
     left: 53.5px;
